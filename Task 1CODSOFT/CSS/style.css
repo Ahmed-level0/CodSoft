@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    box-shadow: #19518F 5px 5px 30px 5px;
+    border: #19518F solid 30px;
+    border-radius: 20%;
+}
+html{
+    scroll-behavior: smooth;
+}
+.clr{
+    clear: both;
+}
+h1{ 
+    font-family: "Lobster", sans-serif;
+    font-size:50px;
+    margin: 10px 0px;
+}
+h1 span{
+    color: #A2A2A0;
+}
+a{
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition-duration: 0.5s;
+    color: black;
+}
+a:hover{
+    color: #19518F;
+}
+.nav{
+    top: 0;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    background-color:rgba(49, 111, 192, 0.4);
+    opacity: 0.2;
+    transition-duration:0.6s;
+}
+.nav:hover{
+    opacity: 1;
+}
+.nav li{
+    float: right;
+    font-size: 25px;
+    font-family: "Lobster", sans-serif;
+    margin: 24px 15px;
+
+}
+.nav h4{
+    font-family: "Lobster", sans-serif;
+    float: left;
+    color: #A2A2A0;
+    font-size: 50px;
+    padding-left: 15px;
+}
+.nav h4 span{
+    font-family: "Lobster", sans-serif;
+    float: left;
+    color: #19518F;
+    font-size: 50px;
+    padding-left: 15px;
+}
+ul{
+    list-style: none;
+}
+button{
+    background-color: #A2A2A0;
+    border: #A2A2A0 solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Lobster",sans-serif;
+    margin: 10px 10px 0px 0px;
+    transition-duration:0.5s;
+}
+button:hover{
+    background-color: #d8d8d7;
+}
+/* H E A D E R   S T Y L E */
+section.Header {
+    background-image: linear-gradient(to bottom ,white,#19518F);
+}
+section.Header .avatar-image img{
+    width: 50%;
+    float: right;
+}
+section.Header .Header-desc{
+    width: 40%;
+    float: left;
+    padding: 50px 60px;
+    background-color: #19518F;
+    box-shadow: #19518F 5px 0px 10px;
+}
+section.Header .Header-desc p{
+    font-family: "Lobster", sans-serif;
+    font-size:35px;
+    margin-top: 15px;
+}
+section.Header .Header-desc p span{
+    color:black;
+    transition-duration: 0.5s;
+}
+section.Header .Header-desc p span:hover{
+    color:#A2A2A0;
+}
+i.fa-solid{
+    color: #A2A2A0;
+    padding-right: 10px;
+}
+section.Header .Header-desc .social i{
+font-size: 40px;
+float: left;
+margin-left: 20px;
+padding: 30px 10px;
+}
+.social a li i.fa-facebook{
+    transition-duration: 0.4s;
+}
+.social a li:hover  i.fa-facebook{
+    font-size: 60px;
+}
+
+.social a li i.fa-linkedin{
+    transition-duration: 0.4s;
+}
+.social a li:hover  i.fa-linkedin{
+    font-size: 60px;
+}
+
+.social a li i.fa-github{
+    transition-duration: 0.4s;
+}
+.social a li:hover  i.fa-github{
+    font-size: 60px;
+}
+
+.social a li i.fa-x-twitter{
+    transition-duration: 0.4s;
+    color: black;
+}
+.social a li:hover  i.fa-x-twitter{
+    font-size: 60px;
+    color: black;
+}
+/* E N D  H E A D E R   S T Y L E */
+
+/* A B O U T   S T Y L E */
+section.About{
+    background-color: #19518F;
+}
+section.About .my-image{
+    width: 35%;
+    height: 600px;
+    float: left;
+    border-radius: 10%;
+    margin: 20px 70px 20px;
+    box-shadow: 0px 0px 30px;
+    position: relative;
+    overflow: hidden;  
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 95, 141);
+    position: absolute;
+    right:100%;
+    top: 0;
+    transition-duration: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.layer i{
+    font-size: 30px;
+    padding-right: 110px;
+    padding-top: 30px;
+    color: white;
+}
+.layer i:hover{
+    color: #A2A2A0;
+}
+.layer button{
+    padding: 15px;
+    margin-top: 30px;
+    margin-right: 90px;
+    background-color: white;
+    transition-duration: 0s;
+}
+.layer .resumebutton{
+    margin-right: 75px;
+}
+.layer button:hover{
+    background-color: #A2A2A0;
+}
+.layer1{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0,0.4);
+        position: absolute;
+        inset: 0;
+        transition-duration: 0.5s;
+        opacity: 0;
+}
+section.About .my-image:hover .layer{
+        translate: 250px;
+}
+section.About .my-image:hover .layer1{
+        opacity: 1;
+}
+section.About .my-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    padding-bottom: 15px;
+}
+section.About .my-breif{
+    width: 50%;
+    float: right;
+    padding: 10px 20px 20px 20px;
+    font-family: "Lobster",sans-serif;
+}
+section.About .my-breif h2{
+    margin: 15px 0;
+    font-weight: 300;
+    font-size: 50px;
+    color: #A2A2A0;
+}
+section.About .my-breif h2::before{
+    content: "I";
+    font-family: sans-serif;
+    margin-right: 10px;
+}
+section.About .my-breif p{   
+    font-size: 30px;
+}
+section.About .my-breif .mybrief-table td p {
+    margin: 15px  70px 15px 0px;
+    font-size: 22px;
+}
+section.About .my-breif .mybrief-table td p span{
+    color: #A2A2A0;
+}
+.line{
+    margin-top: 15px;
+    width: 100%;
+    height: 2px;
+    background-color: #A2A2A0;
+}
+/*< /A B O U T   S T Y L E > */
+
+/*< S K I L L S   S T Y L E > */
+section.Skills{
+    background-color: white;
+    background-image: linear-gradient(to bottom ,#19518F,white);
+}
+.Skill p{
+    color: black;
+    font-family: "Lobster",sans-serif;
+    padding: 10px 10px 10px 10px;
+    font-size: 30px;
+}
+.Skill h2{
+    color: #A2A2A0;
+    font-weight: 300;
+    font-size: 40px;
+    font-family: "Lobster",sans-serif;
+    padding: 10px 0px 10px 10px;
+}
+.Skill h2 i{
+    margin-right: 10px ;
+}
+.Skillsbox{
+    padding-top: 15px;
+    box-shadow: #19518F 5px 0px 10px;
+    background-color: #19518F;
+    width: 40%;
+    float: left;
+}
+.skills-image-box{
+    width: 50%;
+    float: right;
+}
+.skills-image-box img{
+    width: 100%;
+}
+/*< / S K I L L S   S T Y L E > */
+
+/*<  P R O J E C T S   S T Y L E > */
+section.Projects{
+    background-image: linear-gradient(to top ,#19518F,white);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+section.Projects .project{
+    margin: 50px 50px 60px 380px ;
+    background-color: #A2A2A0;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    border-radius:2% ;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px;
+    transition-duration: 0.5s;
+}
+section.Projects .project:hover{
+    transform: scale(1.1);    
+    background-color: #d4d4d2;
+}
+section.Projects .project .projectimg{
+    width: 40%;
+}
+section.Projects .project .projectimg img{
+    width: 100%;
+    height: 100%;
+}
+section.Projects .project .projectdesc{
+    padding-left: 10px;
+    font-family: "Lobster",sans-serif;
+    font-size: 20px;
+}
+section.Projects h2{
+    font-family: "Lobster",sans-serif;
+    font-weight: 300;
+    color: #A2A2A0;
+    font-size:50px;
+    padding-left: 20px;
+}
+.projectbox{
+    margin: auto;
+    padding-bottom: 15px;
+}
+.heading{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+.style{
+    width: 260px;
+    height: 2px;
+    background-color: #A2A2A0;
+    margin-top: 10px;
+}
+.style1{
+    width: 200px;
+    height: 2px;
+    background-color: #A2A2A0;
+    margin-top: 7.5px;
+    margin-left: 30px;
+}
+/*< /P R O J E C T S   S T Y L E > */
+section.Resume-contact h2{
+    font-family: "Lobster",sans-serif;
+    font-weight: 300;
+    color: #A2A2A0;
+    font-size:50px;
+    padding-left: 20px;
+}
+section.Resume-contact{
+    background-color: #19518F;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.message{
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+}
+.row{
+    margin: 5px;
+    padding: 10px;
+}
+.Name{
+    width: 50%;
+    float: left;
+    margin-right:5px;
+    margin-bottom:10px;
+    padding: 15px;
+}
+.E-mail{
+    padding: 15px;
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+.subject{
+    padding: 15px;
+    width: 100%;
+}
+.text-area{
+    width: 100%;
+    padding: 15px;
+}
+footer{
+    background-image: linear-gradient(to bottom ,#19518F,#A2A2A0);
+}
+.copyright{
+    color: #A2A2A0;
+    font-family: "Lobster",sans-serif;
+    padding: 50px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+footer .footericons{
+    display: flex;
+    justify-content: center;
+}
+footer .footericons i{
+    padding: 10px 10px;
+    font-size: 25px;
+    color: white;
+    transition-duration: .5s;
+}
+footer .footericons i:hover{
+    color: #19518F;
+}
